@@ -1,0 +1,16 @@
+/wp-content/plugins/wpnp.zip
+/wp-content/themes/hello-elementor-child/template-exercises.php
+# Environment files
+.env
+**/.htaccess
+
+
+# Logs
+logs/
+*.log
+
+# Node
+node_modules/
+
+# Build output
+dist/
