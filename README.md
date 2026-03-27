@@ -18,39 +18,6 @@ Personal website for Alexandru Rosu, built with WordPress + Elementor and a cust
 
 ---
 
-## Local development
-
-### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
-
-### Start
-
-```bash
-docker compose up -d
-```
-
-| Service | URL |
-|---|---|
-| WordPress | http://localhost:8001 |
-| phpMyAdmin | http://localhost:9300 |
-
-### Stop
-
-```bash
-docker compose down
-```
-
-### Database credentials
-
-| Key | Value |
-|---|---|
-| Host | `db` |
-| Database | `alex_rosu` |
-| User | `root` |
-| Password | `root` |
-
----
-
 ## Theme
 
 Custom child theme located at `wp-content/themes/hello-elementor-child/`.
