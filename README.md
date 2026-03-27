@@ -34,4 +34,16 @@ Key template files:
 | `template-exercises.php` | Exercises page |
 | `timeline-archive-new.php` | Timeline archive |
 
+---
 
+## Archive page — media & metadata
+
+The archive page fetches images directly from the WordPress **Media Library** using the REST API (`/wp-json/wp/v2/media`). This keeps the archive decoupled from page builder content — images are managed in one place and queried on demand.
+
+Each media item carries additional metadata attached via **ACF (Advanced Custom Fields)**. Fields such as donor name, year, category, or description are registered on the `attachment` post type in ACF and exposed through the REST API, so the same endpoint returns both the image URLs and all custom meta in a single request.
+
+```
+GET /wp-json/wp/v2/media?per_page=100&_fields=id,source_url,acf
+```
+
+This approach means editors upload a photo once, fill in the ACF fields, and the archive page reflects the changes immediately — no template edits needed.
