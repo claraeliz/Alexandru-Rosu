@@ -34,10 +34,4 @@ Key template files:
 | `template-exercises.php` | Exercises page |
 | `timeline-archive-new.php` | Timeline archive |
 
----
 
-## Importing the database
-
-1. Open phpMyAdmin at http://localhost:9300
-2. Select the `alex_rosu` database
-3. Go to **Import** and upload `backup.sql`
